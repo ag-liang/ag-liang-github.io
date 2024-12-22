@@ -1,0 +1,348 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #f9f8f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #243c94;
+    margin: 0;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #243c94;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: left;
+    margin-top: -50px;
+}
+
+.center > div {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 60%;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+main h2 {
+    font-size: 32px;
+    color: #243c94;
+    margin-bottom: 10px;
+}
+
+main h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #243c94;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.buttons .button:hover {
+    background-color: #1e3284;
+}
+
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+.section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.project-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #243c94;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links .button {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Contact Section */
+/* Contact Page */
+.contact-section {
+    padding: 50px;
+    background-color: #f9f8f4;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #243c94;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #243c94;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #243c94;
+    outline: none;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #243c94;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1e3284;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #243c94;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contact-info .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #243c94;
+    transition: color 0.3s;
+}
+
+.contact-info .social-links a:hover {
+    color: #1e3284;
+}
+
+p + ul {
+    margin-top: 0;  /* Removes space between paragraph and ul */
+}
+
+ul {
+    margin-top: 0;
+    padding-top: 0;  /* Removes default padding */
+}
+
+/* Contact Info Styling */
+.contact-info {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.email-link {
+    display: inline;
+    margin-bottom: 0;
+    color: #243c94;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    color: #243c94;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+ul.text-left {
+    margin-top: 0;
+    list-style-position: inside;
+    padding-left: 50px;
+}
+
+p.text-left {
+    text-align: left;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    padding-left: 30px;
+}
+
+.email-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.email-label {
+    color: #555;
+    font-weight: bold;
+}
